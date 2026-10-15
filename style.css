@@ -4,9 +4,9 @@
   --ink: #15241d;
   --muted: #5b6b63;
   --line: #e3e7e0;
-  --green: #1f5c45;
-  --green-deep: #143a2c;
-  --soft: #e2f1e8;
+  --link: #1973e8;
+  --link-deep: #0f5bb8;
+  --soft: #e7f1fc;
 }
 
 * { box-sizing: border-box; }
@@ -22,9 +22,9 @@ body {
   line-height: 1.65;
 }
 
-a { color: var(--green); }
+a { color: var(--link); }
 
-a:hover { color: var(--green-deep); }
+a:hover { color: var(--link-deep); }
 
 .wrap {
   width: min(42rem, calc(100% - 2rem));

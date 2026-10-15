@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>提一下 · 隐私政策</title>
-  <meta name="description" content="提一下（RemindThat）隐私政策。资料默认只保存在你的手机上。">
+  <title>提提我 · 隐私政策</title>
+  <meta name="description" content="提提我（RemindThat）隐私政策。资料默认只保存在你的 iPhone 上。">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231F5C45'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231973E8'/%3E%3C/svg%3E">
 </head>
 <body>
   <div class="wrap">
     <header>
-      <a class="mark" href="index.html">提一下</a>
+      <a class="mark" href="index.html">提提我</a>
       <nav class="langs" aria-label="Language">
         <a href="#zh">中文</a>
         <a href="#en">English</a>
@@ -23,44 +23,54 @@
       <section id="zh" lang="zh-Hans">
         <h1>隐私政策</h1>
         <p class="en-name">RemindThat</p>
-        <p class="meta">生效日期：2026年10月9日。适用于 iOS 版「提一下」。若后续版本改变数据处理方式，会更新本页并修改日期。</p>
-        <p>这是个人开发的应用，没有账号系统，也没有开发者运营的服务器来接收你的物品资料。下面说明资料留在哪里，以及什么情况下会离开这台手机。</p>
+        <p class="meta">生效日期：2026年10月15日。适用于 iOS 版「提提我」。若后续版本改变数据处理方式，会更新本页并修改日期。</p>
+        <p>这是个人开发的应用，没有账号系统，也没有开发者运营的服务器来接收你的记录。下面说明资料留在哪里，以及什么情况下会离开这台手机。</p>
 
         <h2>留在手机上的内容</h2>
-        <p>物品名称、类别、日期、数量、备注、提醒设置，以及你选择保留的照片，写在这台手机的应用资料里。开发者无法读取这些内容。</p>
+        <p>记录名称、分类、日期、数量、备注、提醒设置，以及你确认保存的照片，写在这台 iPhone 的应用资料里。开发者无法读取这些内容。应用已要求系统不要把这些资料纳入 iCloud 设备备份。</p>
         <p>卸载应用会删除这些资料。换到另一台手机时，只有你自己导出的备份能把它们带走。</p>
 
-        <h2>相机、相册和麦克风</h2>
+        <h2>相机、相册和文字识别</h2>
         <ul>
-          <li>相机只在你拍摄包装或证件时使用。</li>
+          <li>相机只在你拍摄证件、药盒或物品时使用。</li>
           <li>相册只在你主动挑选时读取那一张照片。</li>
-          <li>麦克风只在你使用「说一说」时录音。语音在手机上离线识别。识别结束、你取消，或应用进入后台时，录音文件会被删除。若中途被打断，下次打开应用时会清掉残留的临时录音。</li>
+          <li>照片里的文字由 Apple Vision 在这台手机上识别，不会上传。</li>
         </ul>
-        <p>录音不发给开发者，也不发给后面提到的 AI 服务。照片在使用前会重新编码，拍摄位置等原有元数据不会保留。只有你打开「把照片保存在这条记录中」时，处理后的照片才和这条记录一起留在手机上。</p>
+        <p>保存前照片会重新编码，拍摄位置等元数据不会保留。取消录入不会留下照片。你确认保存之后，处理后的照片才和这条记录一起留在手机上。</p>
+
+        <h2>语音</h2>
+        <p>麦克风只在你使用「说一句」时使用。默认在这台手机上识别，语音不离开设备。</p>
+        <p>下面两种情况，语音会发送给 Apple 处理，受 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a> 约束：</p>
+        <ul>
+          <li>你在「设置」里关闭「离线识别」。</li>
+          <li>这台手机不能对所选语言做离线识别。这时应用会改用 Apple 的在线识别。</li>
+        </ul>
+        <p>本应用不保存录音，记录里只保留转写文字。录音不会发给开发者，也不会发给下面的 AI 服务。</p>
 
         <h2>可选的 AI 识别</h2>
-        <p>AI 默认关闭。不填写 API Key 时，本机文字识别、离线语音和手动填写仍然可用。</p>
-        <p>你在「提醒与备份 → AI 识别设置」中填写服务名称、HTTPS 地址、模型名称和 API Key，并主动点「使用 AI 识别」后，手机会把当次内容直接发给你填写的那个地址：</p>
+        <p>AI 默认关闭。不填写 API Key 时，本机文字识别、语音和手动填写仍然可用。</p>
+        <p>你在「设置 → AI 识别设置」中填写服务名称、HTTPS 地址、模型名称和 API Key 并开启之后，只有你在确认页主动点「AI」，手机会把当次内容直接发给你填写的那个地址：</p>
         <ul>
-          <li>图片模式：当次照片，以及本机已经识别出的文字。</li>
-          <li>文字模式：仅本机已经识别出的文字。</li>
+          <li>你允许发送照片时：当次照片，以及本机已经识别出的文字。</li>
+          <li>未允许发送照片时：仅本机已经识别出的文字。</li>
           <li>「测试连接」只发送一段固定测试文字，不发送照片。</li>
         </ul>
-        <p>这次请求不经过开发者。对方服务如何保存和使用这些内容，按其自己的条款处理，并可能向你收费。API Key 存在系统提供的安全存储中，不写进物品备份。你更换服务地址时，编辑框里尚未保存的旧 Key 会被清掉。</p>
+        <p>这次请求不经过开发者。对方服务如何保存和使用这些内容，按其自己的条款处理，并可能向你收费。API Key 存在系统钥匙串中，不写进备份。你更换服务地址时，需要重新填写 Key。</p>
         <p>应用只接受以 https:// 开头的地址。</p>
 
         <h2>通知</h2>
-        <p>提醒由这台手机的系统在本地显示，内容包含物品名称和剩余时间。开发者不接收这些通知，也不据此做统计。</p>
+        <p>提醒由这台手机的系统在本地显示。开发者不接收这些通知，也不据此做统计。</p>
 
         <h2>备份</h2>
-        <p>备份要由你主动导出。文件包含记录、你保留的照片和提醒设置，不包含 API Key。文件带有完整性校验，正文是明文，不是加密档案，请存到你信任的位置。若你把它存进 iCloud 或其他会自行同步的文件夹，是否上传由那个文件服务决定。</p>
-        <p>应用会要求系统不要把应用私有资料纳入设备的自动云备份。这不影响你自己选择的导出位置。</p>
+        <p>备份要由你主动导出。文件包含记录、照片、分类和提醒设置，不包含 API Key。文件带有完整性校验，正文是明文，不是加密档案，请存到你信任的位置。单份备份不超过 100 MB。若你把它存进 iCloud 或其他会自行同步的文件夹，是否上传由那个文件服务决定。</p>
+        <p>恢复前会先校验文件。现有资料会被备份中的内容替换。替换前的资料留在手机上，可以在「设置」里取回。</p>
+        <p>上面说的 iCloud 设备备份排除，不影响你自己选择的导出位置。</p>
 
         <h2>本页与开发者不收集的内容</h2>
         <p>开发者不收集姓名、电话、电子邮箱、广告标识、位置或通讯录，也不做跨应用追踪。本网站是静态页面，不使用 Cookie，不嵌入分析或广告脚本。</p>
 
         <h2>儿童</h2>
-        <p>本应用不面向 13 岁以下儿童收集个人信息。</p>
+        <p>本应用不收集任何人的个人信息，包括儿童。</p>
 
         <h2>联系</h2>
         <p>对本政策有疑问，请在 <a href="https://github.com/DouglasKillua9281/remindthat/issues">GitHub Issues</a> 留言。不要附上 API Key、证件照片或备份文件。</p>
@@ -70,45 +80,55 @@
 
       <section id="en" lang="en">
         <h1>Privacy policy</h1>
-        <p class="en-name">提一下 · RemindThat</p>
-        <p class="meta">Effective 9 October 2026. This policy covers the iOS app RemindThat. If a later version changes how data is handled, this page will be updated and the date will change.</p>
-        <p>The app is published by an individual developer. It has no accounts and no developer-operated server that receives your items. This page states where data stays, and when it leaves the phone.</p>
+        <p class="en-name">提提我 · RemindThat</p>
+        <p class="meta">Effective 15 October 2026. This policy covers the iOS app 提提我 (RemindThat). If a later version changes how data is handled, this page will be updated and the date will change.</p>
+        <p>The app is published by an individual developer. It has no accounts and no developer-operated server that receives your records. This page states where data stays, and when it leaves the phone.</p>
 
         <h2>What stays on the phone</h2>
-        <p>Item names, categories, dates, quantities, notes, reminder settings, and photos you choose to keep are stored in the app’s data on this phone. The developer cannot read them.</p>
+        <p>Names, categories, dates, quantities, notes, reminder settings, and photos you confirm are stored in the app’s data on this iPhone. The developer cannot read them. The app asks the system to leave this data out of iCloud device backup.</p>
         <p>Uninstalling the app deletes that data. Moving to another phone requires a backup you export yourself.</p>
 
-        <h2>Camera, photo library, and microphone</h2>
+        <h2>Camera, photo library, and text recognition</h2>
         <ul>
-          <li>The camera is used when you photograph a package or a document.</li>
+          <li>The camera is used when you photograph a document, medicine box, or item.</li>
           <li>The photo library is read only for the picture you pick.</li>
-          <li>The microphone is used when you tap the speech button. Speech is recognized offline on the phone. The recording is deleted when recognition finishes, when you cancel, or when the app goes to the background. A recording interrupted mid-way is deleted the next time the app opens.</li>
+          <li>Text in the photo is recognized by Apple Vision on this iPhone and is not uploaded.</li>
         </ul>
-        <p>Recordings are not sent to the developer or to the optional AI service below. Photos are re-encoded before use, so the original metadata, including location, is not kept. A photo is stored with an item only if you turn on keeping the photo with that item.</p>
+        <p>Before a photo is saved, it is re-encoded, so the original metadata, including location, is not kept. Cancelling an entry does not leave the photo behind. A photo is stored with a record only after you confirm it.</p>
+
+        <h2>Speech</h2>
+        <p>The microphone is used when you tap “说一句”. Recognition stays on this iPhone by default, and the audio does not leave the device.</p>
+        <p>The audio is sent to Apple, under the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>, in two cases:</p>
+        <ul>
+          <li>You turn off “On-device recognition” in Settings.</li>
+          <li>This iPhone cannot recognize the selected language on device. The app then uses Apple’s online recognition.</li>
+        </ul>
+        <p>The app does not keep recordings. A record stores only the transcript. Recordings are not sent to the developer or to the optional AI service below.</p>
 
         <h2>Optional AI recognition</h2>
-        <p>AI is off unless you turn it on. Without an API key, on-device text recognition, offline speech, and manual entry still work.</p>
-        <p>After you enter a service name, an HTTPS address, a model name, and an API key under Reminders &amp; backup → AI settings, and you tap the AI recognition action, the phone sends that attempt directly to the address you entered:</p>
+        <p>AI is off unless you turn it on. Without an API key, on-device text recognition, speech, and manual entry still work.</p>
+        <p>After you enter a service name, an HTTPS address, a model name, and an API key under Settings → AI recognition and turn it on, the phone sends that attempt directly to the address you entered only when you tap AI on the confirmation page:</p>
         <ul>
-          <li>Image mode: the photo from that attempt, plus text already recognized on the phone.</li>
-          <li>Text mode: only the text already recognized on the phone.</li>
+          <li>If you allow photos: the photo from that attempt, plus text already recognized on the phone.</li>
+          <li>If you do not allow photos: only the text already recognized on the phone.</li>
           <li>Test connection sends a fixed test sentence and does not send a photo.</li>
         </ul>
-        <p>The request does not pass through the developer. The service you chose handles that content under its own terms and may charge you. The API key is kept in the system’s secure storage and is not included in item backups. Changing the service address clears an unsaved key from the form.</p>
+        <p>The request does not pass through the developer. The service you chose handles that content under its own terms and may charge you. The API key is kept in the system keychain and is not included in backups. Changing the service address requires you to enter the key again.</p>
         <p>The app accepts only addresses that start with https://.</p>
 
         <h2>Notifications</h2>
-        <p>Reminders are local notifications on this phone. They include the item name and the time remaining. The developer does not receive them and does not use them for analytics.</p>
+        <p>Reminders are shown locally by this iPhone. The developer does not receive them and does not use them for analytics.</p>
 
         <h2>Backups</h2>
-        <p>A backup is created only when you export one. The file contains items, photos you kept, and reminder settings. It does not contain the API key. It includes an integrity check and is stored as readable data, not as an encrypted archive. Keep it somewhere you trust. If you save it in iCloud or another folder that syncs, that file service decides whether to upload it.</p>
-        <p>The app asks the system to leave the app’s private data out of automatic device backup. That does not cover a folder you pick yourself when exporting.</p>
+        <p>A backup is created only when you export one. The file contains records, photos, categories, and reminder settings. It does not contain the API key. It includes an integrity check and is stored as readable data, not as an encrypted archive. Keep it somewhere you trust. A single backup cannot exceed 100 MB. If you save it in iCloud or another folder that syncs, that file service decides whether to upload it.</p>
+        <p>The file is checked before a restore. What is currently on the phone is replaced by the backup. The previous data stays on the phone and can be brought back from Settings.</p>
+        <p>Excluding the app’s private data from iCloud device backup does not cover a folder you pick yourself when exporting.</p>
 
         <h2>What this site and the developer do not collect</h2>
         <p>The developer does not collect your name, phone number, email address, advertising identifier, location, or contacts, and does not track you across apps. This website is static. It does not use cookies or embed analytics or advertising scripts.</p>
 
         <h2>Children</h2>
-        <p>The app does not collect personal information from children under 13.</p>
+        <p>The app does not collect personal information from anyone, including children.</p>
 
         <h2>Contact</h2>
         <p>Questions about this policy: <a href="https://github.com/DouglasKillua9281/remindthat/issues">GitHub Issues</a>. Do not attach an API key, document photos, or a backup file.</p>
